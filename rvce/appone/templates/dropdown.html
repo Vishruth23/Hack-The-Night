@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dropdown with Search</title>
+  <style>
+    /* CSS styles for the page */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f7f7f7;
+    }
+    .container {
+      text-align: center;
+    }
+    .dropdown {
+      display: inline-block;
+      position: relative;
+    }
+    .dropdown select {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+    .selected-value {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+    .search-button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="dropdown">
+      <select id="dropdownList">
+        <option value="">Select an entry</option>
+        <option value="entry1">Entry 1</option>
+        <option value="entry2">Entry 2</option>
+        <!-- Add more options here -->
+        <option value="entry34">Entry 34</option>
+      </select>
+    </div>
+    <div class="selected-value" id="selectedValue"></div>
+    <button class="search-button">Search</button>
+  </div>
+
+  <script>
+    // JavaScript code to display the selected dropdown value
+    const dropdownList = document.getElementById('dropdownList');
+    const selectedValue = document.getElementById('selectedValue');
+
+    dropdownList.addEventListener('change', function() {
+      selectedValue.textContent = dropdownList.value;
+    });
+  </script>
+</body>
+</html>
