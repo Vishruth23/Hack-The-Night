@@ -2,17 +2,46 @@
 <html>
 <head>
     <title>NGO Portal</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        ul {
+            margin-bottom: 20px;
+        }
+        .new-blog-button {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to the NGO Portal</h1>
-    
-    <h2>NGO Details</h2>
-    <p>NGO Name: {{ ngo.username }}</p>
-    
-    <h2>NGO Activities</h2>
-    <ul>
-        About your NGO:
-        {{ ngo.bio_and_works }}
-    </ul>
+    <div class="container">
+        <h1>Welcome to the NGO Portal</h1>
+        
+        <h2>NGO Details</h2>
+        <p>NGO Name: {{ ngo.username }}</p>
+        
+        <h2>NGO Activities</h2>
+        <ul>
+            <li>About your NGO:</li>
+            <li>{{ ngo.bio_and_works }}</li>
+        </ul>
+
+        <a href="./newblog" class="btn btn-primary new-blog-button">Write a new blog!</a>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
