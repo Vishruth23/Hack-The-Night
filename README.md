@@ -1,6 +1,7 @@
 # Hack-The-Night Team Segmentation Fault
-Bridging the NGO-Volunteer Gap
 RVCE Hackathon - 15-June-2023
+
+## Bridging the NGO-Volunteer Gap
 
 Team members: Vishruth Vijay, Sathvik S Rao and Siddharth Menon
 
@@ -14,6 +15,10 @@ Our application has the following note-worthy features:
 
 3) Interactive chatbot: Our interactive chatbot is designed to provide instant assistance and cater to simple queries about the events hosted by NGOs. With a user-friendly interface, the chatbot serves as a virtual assistant, guiding users through event-related information and facilitating seamless communication. Users can ask questions about event schedules, locations, and any other relevant details. The chatbot leverages advanced natural language processing capabilities to understand user queries and provide accurate and timely responses.
 
+## Technologies used:
 
+1) Gensim,nltk and dateutil for natural language processing to answer queries related to an event
+2) Selenium for webscraping and getting details of ngo's which haven't registered yet. These are then displayed on our site as a separate category, so that the volunteers have a hassle free experience in finding the NGO of their choice to donate.
+3) Django for website development and sqlite3 for DB management. 
 
 
