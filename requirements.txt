@@ -1,0 +1,8 @@
+gensim
+nltk
+summa
+python-dateutil
+pillow
+django
+selenium
+undetected-chromedriver
