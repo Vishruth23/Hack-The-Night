@@ -150,5 +150,3 @@ def response(query,filename):
     # most_similar_document_index = similarity_scores[0][0]
     # most_similar_document = documents[most_similar_document_index]
     # print("Most similar document:", most_similar_document)
-if __name__=="__main__":
-    print(response("When will the event take place?"),"context.txt")
